@@ -1,6 +1,6 @@
 {% set name = "ctre" %}
-{% set version = "3.8.1" %}
-{% set sha256 = "0ce8760d43b3b97b43364cd32ee663e5c8b8b4bfd58e7890042eff6ac52db605" %}
+{% set version = "3.9.0" %}
+{% set sha256 = "55778712968d4f3ad00e9d20fc4d2149d14d96b4ff3dab086613797cd2ccd2b2" %}
 
 
 package:
@@ -18,6 +18,7 @@ build:
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
     - cmake
     - make  # [unix]
   run:
